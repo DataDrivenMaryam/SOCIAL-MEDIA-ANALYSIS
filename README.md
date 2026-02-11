@@ -2,7 +2,7 @@
 This project explores influencer data across Instagram, TikTok, and YouTube using SQL. It includes data cleaning, quality checks, platform performance comparison, audience growth analysis, and top-tier influencer identification to evaluate social media dominance and engagement trends.
 # 📊 Social Media Analysis
 
-
+![Image alt](https://github.com/DataDrivenMaryam/SOCIAL-MEDIA-ANALYSIS/blob/main/Futuristic%20Social%20Media%20Analytics%20Banner.png)
 ---
 
 ## 📌 Project Overview
