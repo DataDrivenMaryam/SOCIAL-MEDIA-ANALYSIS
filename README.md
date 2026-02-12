@@ -5,7 +5,7 @@ This project explores influencer data across Instagram, TikTok, and YouTube usin
 ![Image alt](https://github.com/DataDrivenMaryam/SOCIAL-MEDIA-ANALYSIS/blob/main/Futuristic%20Social%20Media%20Analytics%20Banner.png)
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project analyzes influencer performance across **Instagram, TikTok, and YouTube** using SQL.
 
@@ -18,14 +18,14 @@ The analysis focuses on:
 
 ---
 
-## 🛠 Tools Used
+##  Tools Used
 - MySQL
 - SQL
 - GitHub
 
 ---
 
-# 🔹 Phase 1: Database Setup
+#  Phase 1: Database Setup
 
 Database creation and initial inspection of tables.
 
