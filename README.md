@@ -41,7 +41,7 @@ This was handled during data cleaning. Columns representing the same metric were
 
 
 
-Phase 3 — Data Understanding & Quality Checks
+#  Phase 3 — Data Understanding & Quality Checks
 Key Data Limitations (Observed)
 
 Influencer naming inconsistencies (mixture of characters and alphabets) can complicate grouping/joins
@@ -50,7 +50,7 @@ Followers/views may be missing, zero, or inconsistent
 
 Influencers appear across multiple months (valid), but can affect duplicate logic if not handled carefully
 
-# Phase 4 — Core Social Media Analysis Tasks
+#  Phase 4 — Core Social Media Analysis Tasks
 1. Total number of influencers by platform
 
 SELECT platform, COUNT(*) AS total_influencers
@@ -96,7 +96,7 @@ GROUP BY Platform;
 #Comment:
 This standardizes audience size metrics across platforms into a single numeric field for accurate averaging.
 
-Phase 5 — Platform Comparison Analysis
+#  Phase 5 — Platform Comparison Analysis
 Which platform has the highest average audience size?
 SELECT
   platform,
@@ -129,7 +129,7 @@ ORDER BY avg_audience_millions DESC;
 Comment:
 This query compares platforms by standardizing audience size into “millions,” filtering nulls, then ranking platforms by average audience.
 
-Phase 6 — Time-Based Growth Analysis
+#  Phase 6 — Time-Based Growth Analysis
 Instagram average audience growth across months
 SELECT
     curr.platform,
@@ -196,7 +196,7 @@ ORDER BY curr.month;
 Comment:
 Same growth logic as Instagram, but TikTok audience is calculated by combining million + thousand subscriber fields.
 
-Phase 7 — Compare Influencer Reach vs Platform Averages
+#  Phase 7 — Compare Influencer Reach vs Platform Averages
 Instagram: influencer vs platform average
 SELECT
     i.SN AS influencer_id,
@@ -225,7 +225,7 @@ This benchmarks each influencer against the monthly platform average and labels 
 
 (You applied the same logic for YouTube and TikTok — great consistency.)
 
-Phase 8 — Conditional Logic & Segmentation
+#  Phase 8 — Conditional Logic & Segmentation
 Identify top-tier influencers (audience ≥ 10M)
 SELECT
     platform,
@@ -257,6 +257,3 @@ ORDER BY audience_millions DESC;
 Comment:
 This segments influencers into a “top-tier” group using a clear threshold rule across platforms.
 
-Phase 9 — Category Dominance Analysis (Planned)
-
-Goal: Identify which categories dominate each platform (most frequent or highest-performing categories).
