@@ -249,7 +249,8 @@ JOIN (
 ON i.Month = p.Month
 WHERE i.Followers_million IS NOT NULL
 ORDER BY difference_from_platform_avg DESC;
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/703f4953-1ca2-40c2-a404-8e8710bb7341" />
+
+![image alt]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/703f4953-1ca2-40c2-a404-8e8710bb7341" />
 
 Comment:
 This benchmarks each influencer against the monthly platform average and labels performance as above/below average.
