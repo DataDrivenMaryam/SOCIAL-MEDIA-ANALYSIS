@@ -92,6 +92,8 @@ FROM (
     SELECT sn, 'youtube' AS platform FROM youtube
 ) AS all_platforms
 GROUP BY platform;
+<img width="514" height="514" alt="Image" src="https://github.com/user-attachments/assets/8792d80e-21f8-4bb5-8770-c90871f9b639" />
+
 # Comment:
 This combines all platforms into a single dataset using UNION ALL and counts influencers per platform.
 UNION ALL is faster and appropriate because the datasets represent different platforms.
