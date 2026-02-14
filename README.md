@@ -186,7 +186,7 @@ AND (
     OR (curr.month = 'Latest'   AND prev.month = 'December')
 )
 ORDER BY curr.month;
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/dd1a8797-c7aa-4f9c-8ce0-f6db1977b923" />
 
 Comment:
 This compares monthly averages month-to-month to estimate platform-level growth over time.
