@@ -123,7 +123,9 @@ FROM (
     SELECT Subscribers_count AS subscriber_count, 'youtube' AS platform FROM youtube
 ) AS all_platforms
 GROUP BY Platform;
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1b42fd32-0b31-48d9-89e2-32032d032339" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/56cdd516-4edf-45da-8f84-3bbcb7b57e4b" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e1d50bd3-f3b8-4aef-904e-2346bf5b8fd5" />
 #Comment:
 This standardizes audience size metrics across platforms into a single numeric field for accurate averaging.
 
@@ -160,7 +162,7 @@ ORDER BY avg_audience_millions DESC;
 Comment:
 This query compares platforms by standardizing audience size into “millions,” filtering nulls, then ranking platforms by average audience.
 
-![image alt]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1e8cfce9-e7c0-4c25-97f9-fc94f90c8d75" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1e8cfce9-e7c0-4c25-97f9-fc94f90c8d75" />
 
 #  Phase 6 — Time-Based Growth Analysis
 Instagram average audience growth across months
@@ -251,8 +253,7 @@ JOIN (
 ON i.Month = p.Month
 WHERE i.Followers_million IS NOT NULL
 ORDER BY difference_from_platform_avg DESC;
-
-![image alt]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/703f4953-1ca2-40c2-a404-8e8710bb7341" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/703f4953-1ca2-40c2-a404-8e8710bb7341" />
 
 Comment:
 This benchmarks each influencer against the monthly platform average and labels performance as above/below average.
@@ -287,7 +288,7 @@ FROM (
 ) AS combined
 WHERE audience_millions >= 10
 ORDER BY audience_millions DESC;
-![image alt]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a856621e-8a54-4740-8eb7-ba009721056a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a856621e-8a54-4740-8eb7-ba009721056a" />
 Comment:
 This segments influencers into a “top-tier” group using a clear threshold rule across platforms.
 
