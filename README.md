@@ -285,7 +285,7 @@ FROM (
 ) AS combined
 WHERE audience_millions >= 10
 ORDER BY audience_millions DESC;
-
+![image alt]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a856621e-8a54-4740-8eb7-ba009721056a" />
 Comment:
 This segments influencers into a “top-tier” group using a clear threshold rule across platforms.
 
