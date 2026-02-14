@@ -25,17 +25,47 @@ The analysis focuses on:
 
 ---
 
-#  Phase 1: Database Setup
+#  Phase 1 — Database Setup
 
-Database creation and initial inspection of tables.
+Work:
 
-```sql
-CREATE DATABASE Social_media_analysis;
-USE Social_media_analysis;
+Create project database
 
-# Phase 2 — Data Standardization & Integration
+Create raw tables (by platform and/or month)
+
+Define data types (text vs numeric)
+
+Add fields for platform and snapshot month
+
+Load all CSVs
+
+Deliverables:
+
+SQL scripts for database + table creation + loading
+
+Row count per table
+
+Written explanation of table design choices
+
+#  Phase 2 — Standardization & Integration
+
+Work:
+
 Standardize column names across datasets
 
+Normalize platform naming conventions
+
+Build a consolidated influencers table using UNION ALL
+
+Preserve platform + month context in the unified dataset
+
+Deliverables:
+
+SQL script creating the consolidated influencers table/view
+
+Explanation of how monthly datasets were combined
+
+Validation query showing record totals by platform and month
 Comment:
 This was handled during data cleaning. Columns representing the same metric were made consistent so analysis and comparisons work reliably (e.g., followers/subscribers formatted consistently).
 
@@ -256,4 +286,32 @@ ORDER BY audience_millions DESC;
 
 Comment:
 This segments influencers into a “top-tier” group using a clear threshold rule across platforms.
+
+#  Key Insights Generated
+
+Certain platforms host significantly larger average audiences
+
+Influencer growth varies substantially by platform and month
+
+Specific countries consistently dominate influencer reach
+
+A small percentage of influencers control a large share of total audience
+
+#  Skills Demonstrated
+
+Database design
+
+Multi-table integration
+
+Data standardization
+
+Data quality validation
+
+Aggregations & grouping
+
+Window functions
+
+Conditional logic
+
+Business insight translation
 
